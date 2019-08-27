@@ -1,0 +1,125 @@
+.App {
+  /* opacity: .97; */
+  background-color: #7af0ea;
+  text-align: center;
+  color: rgba(53, 58, 57, 0.897);
+}
+
+.App::after {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;  
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgba(53, 58, 57, 0.897);
+}
+
+.App-link {
+  color: rgba(234, 235, 233, 0.897);
+}
+
+.HappyHiveText {
+  /* font-family: 'Cookie', cursive;
+  font-size: 96px;
+  font-family: 'Alex Brush', cursive; */
+  font-family: 'Rochester', cursive;
+  font-size: 84px;
+}
+.HappyHiveBrand {
+  /* font-family: 'Cookie', cursive;
+  font-size: 40px;
+  font-family: 'Alex Brush', cursive; */
+  font-family: 'Rochester', cursive;
+  font-size: 34px;
+  color: #f5f858cc !important;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.span-col-2 {
+  grid-column: span 2 / auto;
+}
+
+
+.mr-auto a {
+  color: #f8f8f5e5;
+  text-decoration: none;
+}
+.mr-auto a:hover {
+  color: #f5f858cc;
+  text-decoration: none;
+}
+.welcome {
+  color: #f5f858b9;
+}
+
+
+.points {
+  font-size: 13px;
+  color: #f8f8f5e5;
+}
+
+
+/* Working on creating hexagons as hives */
+#hex1 {
+
+  animation: infinite 20s linear;
+  width: 100px;
+  height: 100px;
+}
+
+#color1 {
+  background-color: #f5f858; 
+  /* background-color: rgb(224, 122, 26);  */
+}
+
+.hexagon-wrapper {
+  text-align: center;
+  margin: 20px;
+  position: relative;
+  display: inline-block;
+}
+  
+.hexagon {
+  height: 100%;
+  width: calc(100% * 0.57735);
+  display: inline-block;
+}
+
+.hexagon:before {
+  position: absolute;
+  top: 0;
+  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  background-color: inherit;
+  height: inherit;
+  width: inherit;
+  content: '';
+  transform: rotateZ(60deg);
+}
+  
+.hexagon:after {
+  position: absolute;
+  top: 0;
+  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  background-color: inherit;
+  height: inherit;
+  width: inherit;
+  content: '';
+  transform: rotateZ(-60deg);
+}
+    
